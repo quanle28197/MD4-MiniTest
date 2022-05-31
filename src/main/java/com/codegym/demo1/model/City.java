@@ -18,19 +18,10 @@ public class City {
     private String name;
 
     @ManyToOne
-    private Country country;
+    private Province province;
 
     private double area;
-    private int population;
-    private double gdp;
+    private int popular;
+    private String image;
     private String description;
-
-    public City(String name, Country country, double area, int population, double gdp, String description) {
-        this.name = name;
-        this.country = country;
-        this.area = area;
-        this.population = population;
-        this.gdp = gdp;
-        this.description = description;
-    }
 }
